@@ -1,0 +1,7 @@
+This script is for motif analysis, it includes:
+1. DA peaks between M and F
+2. Motif enrichment analysis
+3. Plotting (DotPlot):
+	- candidates of interest for PT-S2/S3
+	- NR motifs
+4. Plotting (Heatmap for Ar downstreams)

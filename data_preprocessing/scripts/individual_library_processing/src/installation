@@ -1,0 +1,11 @@
+conda create -n doublet_removal_auto python=3.9
+
+conda activate doublet_removal_auto
+
+pip install pandas
+pip install numpy
+pip install scipy
+pip install matplotlib
+pip install -U scikit-learn
+pip install scrublet  ## this requires gcc, which I only found in katmai; so installation on other servers using this command is not successful, but katmai will do
+

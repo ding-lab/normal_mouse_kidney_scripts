@@ -1,0 +1,15 @@
+The scripts in this folder is used for integration across all libraries. To correct for batch effect, we used Harmony for integration, and took 'Nuclei_Dissociation_Date' as the batch.
+One thing to note - apart from the doublet removal from Scrublet in the individual library processing, we also manually removed additional doublets (e.g. based on dual marker expression) during integration and came up with a list of 'cleaned' cells. In the scripts below, only the 'cleaned' cells will be included.
+
+Step1 - integration for the RNA portion
+	Step1_rna_integration_harmony.R
+
+Step2 - integration for the ATAC portion - first, the ATAC modality for all libraries were merged. Meanwhile, we used an iterative approach to re-define peaks, and obtain the new peak-count matrix based on the new peaks. Then, we used Harmony for integration across libraries.
+	Step2.1_merge_all_peaks_from_individual_objects.R
+	Step2.2_atac_integration_harmony.R
+
+Step3 - join RNA and ATAC portion
+	Step3_joint_analysis_RNA_ATAC.R
+
+Step4 - add motif annotations
+	Step4_add_motif_annotations.R

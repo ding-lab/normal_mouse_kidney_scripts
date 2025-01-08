@@ -1,0 +1,11 @@
+This folder contains scripts for pre-processing for each individual multiome library
+
+Using raw fastq files from GSE252772, the downstream processing includes:
+1. The raw FASTQ files were aligned and quantified with the software CellRanger-ARC (v2.0.0) (https://www.10xgenomics.com/support/software/cell-ranger-arc/latest) using the mouse reference genome (mm10). The resulting gene and fragment count matrices for each sample were treated as input for downstream analysis.
+	cellranger-arc count, aligned with mm10
+
+2. Using the output from CellRanger-ARC, doublet detection was done using Scrublet (https://github.com/swolock/scrublet), for rna and atac-metrics separately.
+	One example in doublet_detection.sh
+
+3. Using the output from CellRanger-ARC and Scrublet, each library underwent a seurat-based pipeline (DropletUtils+Seurat) for processing.
+	One example in individual_library_seurat_processing.sh	

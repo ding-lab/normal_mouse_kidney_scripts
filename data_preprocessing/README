@@ -1,0 +1,11 @@
+Harmony, RNA:
+/diskmnt/Projects/Users/rliu/Projects/normal_mouse_kidney_development/new_analysis_20240608/mouse/merging_RNA/NMK_E16.5X2_P0X2_W3X3_W12X3_W52X3_W92X3_20240719_doublet_removed/scripts/integration_harmony.R
+
+Harmony, ATAC:
+/diskmnt/Projects/Users/rliu/Projects/normal_mouse_kidney_development/new_analysis_20240608/mouse/merging_ATAC/NMK_E16.5X2_P0X2_W3X3_W12X3_W52X3_W92X3_20240719_doublet_removed/scripts/atac_RunHarmony.R
+
+sample integration:
+/diskmnt/Projects/Users/rliu/Projects/normal_mouse_kidney_development/new_analysis_20240608/mouse/sample_integration_RNA_ATAC_merged/NMK_E16.5X2_P0X2_W3X3_W12X3_W52X3_W92X3_20240719_doublet_removed/scripts/joint_analysis_RNA_ATAC.R
+
+add motif annotation:
+/diskmnt/Projects/Users/rliu/Projects/normal_mouse_kidney_development/new_analysis_20240608/mouse/sample_integration_RNA_ATAC_merged/NMK_E16.5X2_P0X2_W3X3_W12X3_W52X3_W92X3_20240719_doublet_removed/scripts/add_motif_annotations.R
